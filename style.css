@@ -1,0 +1,354 @@
+    /*head*/
+    .header{
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .header_top{
+        background-color:var(--color-one);
+        color: var(--color-three);
+        font-size: 18px;
+        padding: 12px;
+        text-align: center;
+        
+    }
+    .header_main .container .inner_content{
+        display: flex;
+        align-items: center ;
+        justify-content:space-between;
+        padding:15px 0; /* trên dưới xong mới tới trái phải*/
+    }
+
+
+    /*body*/
+    .container{
+        width: 100%;
+        max-width: 1270px;
+        margin-left: auto;
+        margin-right: auto;
+        ;
+        /* không dùng text-align center căn giữa được vì nó căn chữ còn căn giữa element thì dùng cách trên */
+    }
+    a{
+        text-decoration: none; /* cú pháp này để loiaj bỏ gạch chân trong thẻ a*/
+    }
+    .header_main .container .inner_content .logo img{
+        height:48px;
+        width: auto; /* xét cứng thì dễ bị vỡ logo */
+        margin-right:10px;
+    }
+
+    .header_main .container .inner_content .logo span {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--color-one);
+    }
+    .header_main .container .inner_content .logo a{
+        display: flex;
+        align-items: center;
+    }
+    .header_main .container .inner_content .menu a{
+        color: var(--color-one);
+        margin-left:15px;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+    .header_main .container .inner_content .need_help{
+        color: var(--color-two);
+        margin-left:15px;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+    .header_main .container .inner_content .social ul{
+        color: var(--color-one);
+        list-style-type: none; /* bỏ mấy dấu chấm của danh sách */
+        display: flex;
+
+    }
+
+    .header_main .container .inner_content .social ul li a{
+        color: var(--color-one);
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+
+    /*body*/
+    .main{
+        background-color: var(--color-backround);
+        padding: 80px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .inner_of_main{
+        margin: 0 16px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .main_image img{
+        width: 587px;
+        height: 446.2px;
+    }
+    .antivirus{
+        color: var(--color-one);
+        font-size: 60.8px;
+        font-weight: bold;
+    }
+    h1{
+        margin: 0 0 32px;
+        font:32px;
+        width: 312.88px;
+        height: 139.2px;
+    }
+    .the_easiest{
+        color: var(--color-one);
+        margin:0 0 32px;
+        font-size:22.4px;
+    }
+    .inner_list{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .logo_anti,.logo_protect{ 
+        color:#5b6c8f;
+        font-size:17.6px;
+    }
+    .button{
+        color:#103178;
+        margin: 16px-9.6px 0px;
+        width: 606.2px;
+        height: 74.4px;
+    }
+    .button_button{
+        color: #FFFFFF;
+        font-size:17.6px;
+        margin:30px 9.6px;
+        padding:12.8px 48px;
+        background-color:#FFC830;
+        border-radius: 30px;
+        justify-content: center;
+    }
+    .button_button:hover{
+        background-color:white;
+        color:var(--color-three);
+        border:2px solid #FFC830;
+    }
+    i{
+        margin-left:30px;
+    }
+    .main_image{
+        position: relative;
+    }
+    .inner_sale{
+        position: absolute;
+        top:0px;
+        right: 150px;
+        width: 140px;
+        height:140px;
+        border-radius: 50%;
+        background-color: #FFC830;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sale{
+        font-size: 48px;
+        color:var(--color-one);
+        font-weight: 600;
+    }
+    .only{
+        font-size: 22.4px;
+        font-weight: 600;
+    }
+    .second_main{
+        padding: 100px 0;
+    }
+    .section_two {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:0 100px;
+    }
+    .section_two img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;/* tự co giãn width hieght mà  không bị vỡ */
+    }   
+    .first, .second, .third{
+        width: calc((100% / 3) - 20px);
+        height: 100%;
+        /* tỉ lệ width chia height của element, nhưng lúc nào cx xét cho height là 100%*/
+        aspect-ratio: 4/3;
+        position: relative;
+        display: flex;   
+    }
+    .temp1, .temp2, .temp3{
+        padding-top: 50px;
+        padding-left: 40px;
+        position:absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .more a, .Shop a, .buy_now a{
+        margin-top: 50px;
+        border-radius: 100px;
+        color:white;
+        background-color:var(--color-one);
+        width: 142px;
+        height: 42px;
+        display: flex;
+        justify-content: center;     
+        align-items: center;
+        font-weight: bold;
+    }
+    .tag{
+    width: 70px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13A05D;
+    border-radius: 100px;
+    }
+    .mask{
+        margin-top: 20px;
+        font-size: 32px;
+        color: white;
+        font-weight: bold;
+    }
+    .basic,.medical{
+        font-size: 32px;
+        color:var(--color-one);
+        font-weight: bold;
+    }
+    .sale_30{
+        font-size: 48px;
+        color:#FFC830;
+        font-weight: bold;
+    }
+    .fifteen{
+        font-size: 48px;
+        color:#FFC830;
+        font-weight: bold;
+    }
+    .discount{
+        text-decoration: line-through;
+        margin-top: 20px;
+        font-size: 22.4px;
+        color: grey;
+
+    }
+    .more a:hover,.Shop a:hover,.buy_now a:hover{
+        background-color: white;
+        font-weight: bold;
+        color:var(--color-one);
+    }
+    .section_three{
+        width: 1512px;
+        height: 573px;
+        padding: 80px 0px;
+        background-color: var(--color-backround);
+    }
+    .inner_three{
+        width: 1400px;
+        height: 413px;
+        margin: 0px 56px;
+        padding: 0px 32px;
+    }
+
+    .effective{
+        width: 1368px;
+        height: 187px;
+        margin: 0px - 16px;
+        padding: 0px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .reliable{
+        width: 994px;
+        height: 105px;
+        margin:0px 0px 16px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .text_of_reliable, .protection{
+        width: 468px;
+        height: 59px;
+        font-size: 48px;
+        color: #103178;  
+    }
+    .lorem{
+        width: 994px;
+        height: 33.6px;
+        margin: 8px 0px 32px;
+        color: #5B6C8F;
+        font-size: 22.4px;
+        text-align: center;
+    }
+    .item1, .item2, .item3{
+        width: 342px;
+        height: 226px;
+        padding:0 16px;
+        text-align: center;
+    }
+    .logo1, .logo2, .logo3{
+        width: 310px;
+        height: 48px;
+        text-align: center;
+    }
+    .logo1 i, .logo2 i, .logo3 i  {
+    width: 48px;
+    height: 48px;
+    margin: 0px;
+    font-size: 30px;
+    color: #5B6C8F;
+    }
+    .second_row{
+        display:flex;
+        justify-content: center;
+    }
+    .v, .s,.k{
+        width: 330px;
+        height: 33px;
+        max-width: 0px 0px 32px;
+        text-align: center;
+        margin: 0px 0px 12px;
+
+    }
+    .v strong, .s strong, .k strong{
+        width: 106px;
+        height: 27px;
+        color: #103178;
+        font-size: 22.4px;
+    }
+    .l{
+        width: 310px;
+        height: 52.8px;
+        font-size: 17.6px;
+        color:#5B6C8F;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .four_main{
+        width: 1512px;
+        height: 743px;
+        padding: 80px 0px;
+        background-color: #FFFFFF;
+
+    }
+    .inner_four{
+        width: 1270px;
+        height: 583px;
+        padding: 0px 32px;
+        
+    }
